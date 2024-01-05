@@ -14,7 +14,7 @@ export default function Home() {
           Work with the world&apos;s top creative talent.
         </h1>
         <div className="px-4 text-[18px] leading-[32px] font-medium text-center">
-          Connect with millions of top-rated designers & agencies around the world.
+          Connect with the top-rated developer in the world.
         </div>
         <button className="bg-black py-4 px-6 rounded-3xl text-sm text-white mt-12">Start hiring today</button>
         <Marquee />
