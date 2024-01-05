@@ -11,7 +11,7 @@ export default function Home() {
           Over 3 million ready to work with Keegan!
         </div>
         <h1 className="heroHeading px-6 pt-12 text-center">
-          Work with the world's top creative talent.
+          Work with the world&apos;s top creative talent.
         </h1>
         <div className="px-4 text-[18px] leading-[32px] font-medium text-center">
           Connect with millions of top-rated designers & agencies around the world.
