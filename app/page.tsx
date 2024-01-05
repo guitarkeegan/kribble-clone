@@ -1,3 +1,5 @@
+import Footer from "./components/Footer";
+import LastWord from "./components/LastWord";
 import Marquee from "./components/Marquee";
 
 export default function Home() {
@@ -17,6 +19,9 @@ export default function Home() {
         <button className="bg-black py-4 px-6 rounded-3xl text-sm text-white mt-12">Start hiring today</button>
         <Marquee />
       </section>
+      <LastWord />
+      <Footer />
     </main>
+
   )
 }

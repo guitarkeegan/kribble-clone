@@ -2,6 +2,7 @@ import Image from "next/image"
 import guy from "@/public/img/mock-img.jpeg"
 
 type MarquessParams = {
+    key: number;
     name: string;
     role: string;
     image: string;
@@ -10,21 +11,23 @@ type MarquessParams = {
     type: string;
 }
 
-export default function MarqueeItem({ name, role, image, tags, alt, type }: MarquessParams) {
+export default function MarqueeItem({ key, name, role, image, tags, alt, type }: MarquessParams) {
     return (
-        <div className="hero-marquee-item relative">
+        <div className="hero-marquee-item relative overflow-hidden">
             {
                 type === "image"
                     ?
                     <Image
-                        style={{objectFit: "contain", borderRadius: "26px", filter: "brightness(0.8)"}}
+                        style={{objectFit: "contain", borderRadius: "26px", filter: "brightness(0.7)"}}
                         width={218}
                         height={272}
                         alt={alt} src={image} 
+                        key={key}
                         />
                     :
                     <video
-                        style={{ borderRadius: "26px", filter: "brightness(0.8)" }}
+                        key={key}
+                        style={{objectFit: "contain", borderRadius: "26px", filter: "brightness(0.7)" }}
                         width="218" height="272" autoPlay muted loop>
                         <source src={image} type="video/mp4" />
                         Your browser does not support the video tag.
