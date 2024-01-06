@@ -33,7 +33,7 @@ export default function MarqueeItem({ key, name, role, image, tags, alt, type }:
                     </video>
             }
 
-            <div className="item-info flex flex-col gap-1 absolute bottom-8 left-3">
+            <div className="item-info flex flex-col gap-1 absolute bottom-8 left-3 z-10">
                 <div className="item-name text-white text-sm font-semibold">
                     {name}
                 </div>
