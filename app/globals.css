@@ -32,15 +32,19 @@ body {
   animation: badge-color-cycle 32s linear infinite;
 }
 
+.marq {
+  max-width: 100%;
+}
+
 .hero-marquee {
   padding: 72px 0;
-  width: calc(218px * 10);
+  width: calc(280 * 10px)
 }
 
 .hero-marquee-track {
   animation: scroll 60s linear infinite;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 2rem;
 }
 

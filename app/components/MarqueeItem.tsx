@@ -1,5 +1,4 @@
 import Image from "next/image"
-import guy from "@/public/img/mock-img.jpeg"
 
 type MarquessParams = {
     key: number;
