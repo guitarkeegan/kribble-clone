@@ -27,7 +27,7 @@ export default function MarqueeItem({ key, name, role, image, tags, alt, type }:
                     <video
                         key={key}
                         style={{objectFit: "contain", borderRadius: "26px", filter: "brightness(0.7)" }}
-                        width="218" height="272" autoPlay muted loop>
+                        width="218" height="272" autoPlay muted loop playsInline>
                         <source src={image} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
